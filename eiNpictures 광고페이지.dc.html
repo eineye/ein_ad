@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#3D66E6"><svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="800" fill="#3D66E6"></rect><text x="600" y="470" font-family="Pretendard,Arial,sans-serif" font-size="220" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-8">eiN</text></svg></template>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<style>
+.heroimg{display:block;width:100%;height:100%;object-fit:cover}
+*{box-sizing:border-box}
+body{margin:0;background:#EEF0F7;color:#2b2740;font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:#3D66E6;text-decoration:none}a:hover{color:#2f52c9}
+.stage{position:relative;min-height:100vh;background:radial-gradient(1100px 560px at 50% -8%,rgba(61,102,230,.13),transparent 60%),#F6F7FB;overflow:hidden;padding:0 20px}
+.gridbg{position:absolute;inset:0;background-image:linear-gradient(rgba(30,40,80,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(30,40,80,.045) 1px,transparent 1px);background-size:46px 46px;-webkit-mask-image:radial-gradient(880px 820px at 50% 6%,#000,transparent 76%);mask-image:radial-gradient(880px 820px at 50% 6%,#000,transparent 76%);pointer-events:none}
+.col{position:relative;max-width:680px;margin:0 auto;padding:0 0 4px}
+.brand{display:flex;align-items:center;justify-content:space-between;padding:26px 0 14px;border-bottom:1px solid rgba(30,40,80,.1)}
+.blogo{display:flex;align-items:center;gap:11px}
+.blogo img{height:26px;width:auto;display:block}
+.bword{font-size:19px;font-weight:800;letter-spacing:-.03em;color:#13112b}
+.bword .i{color:#3D66E6}
+.mono{font-family:'IBM Plex Mono',monospace}
+.tag{font-size:10.5px;letter-spacing:.16em;color:#8b88a0}
+.sec{padding:60px 0}
+.badge{display:inline-flex;align-items:center;gap:9px;padding:8px 15px;border-radius:999px;background:#fff;border:1px solid rgba(61,102,230,.22);font-size:12.5px;font-weight:600;color:#3D66E6;box-shadow:0 8px 22px -14px rgba(61,102,230,.6)}
+.badge i{width:7px;height:7px;border-radius:50%;background:#3D66E6;box-shadow:0 0 0 4px rgba(61,102,230,.2);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(61,102,230,.4)}70%{box-shadow:0 0 0 7px rgba(61,102,230,0)}100%{box-shadow:0 0 0 0 rgba(61,102,230,0)}}
+.eb{font-size:11.5px;font-weight:600;letter-spacing:.2em;color:#3D66E6;text-transform:uppercase}
+.h1{font-size:40px;line-height:1.16;font-weight:800;letter-spacing:-.03em;margin:20px 0 0;color:#13112b;text-wrap:balance}
+.grad{background:linear-gradient(115deg,#3D66E6,#7f9cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:#5c5876;font-size:16.5px;line-height:1.65;margin:18px 0 0;max-width:44ch}
+.dim{color:#7a7690}
+.slot{margin-top:30px;border:1px solid rgba(61,102,230,.2);border-radius:18px;overflow:hidden;background:#E7EBF6;box-shadow:0 28px 60px -34px rgba(40,50,110,.55)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{font-size:12.5px;color:#41455e;background:#fff;border:1px solid rgba(30,40,80,.12);border-radius:999px;padding:7px 14px;font-weight:500}
+.rule{height:1px;background:linear-gradient(90deg,transparent,rgba(30,40,80,.14),transparent);margin:8px 0}
+.svc{display:flex;gap:18px;align-items:flex-start;padding:22px 0;border-bottom:1px solid rgba(30,40,80,.08)}
+.sico{flex:none;width:48px;height:48px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:rgba(61,102,230,.1);color:#3D66E6}
+.sico svg{width:25px;height:25px}
+.svc h3{margin:0;font-size:18px;font-weight:700;letter-spacing:-.01em;color:#161327}
+.svc p{margin:5px 0 0;color:#6b6783;font-size:14px}
+.aiband{margin-top:14px;border:1px solid rgba(30,40,80,.09);border-radius:22px;background:#fff;padding:38px 30px;box-shadow:0 30px 66px -40px rgba(40,50,110,.5)}
+.big{font-size:30px;font-weight:800;letter-spacing:-.025em;margin:14px 0 0;color:#13112b}
+.big em{font-style:normal;color:#3D66E6}
+.aiflow{display:flex;gap:22px;align-items:center;margin-top:30px;flex-wrap:wrap;justify-content:center}
+.steps-v{flex:1;min-width:272px;display:flex;flex-direction:column;gap:14px}
+.stepc{position:relative;background:#F7F8FC;border:1px solid rgba(30,40,80,.08);border-radius:16px;padding:20px 22px}
+.stepc .yico{width:44px;height:44px;border-radius:13px;background:#FEE500;display:flex;align-items:center;justify-content:center;color:#191919}
+.stepc .yico svg{width:23px;height:23px}
+.stepc .sn{position:absolute;top:20px;right:22px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.12em;color:#a9a7ba}
+.stepc h4{margin:14px 0 7px;font-size:18px;font-weight:800;letter-spacing:-.02em;color:#161327}
+.stepc p{margin:0;font-size:13.5px;line-height:1.55;color:#6b6783}
+.sarrow{display:flex;justify-content:center;align-items:center;color:#c4c2d4;margin:-3px 0}
+.sarrow svg{width:22px;height:22px}
+.phone{width:280px;flex:none;background:#12111c;border-radius:42px;padding:10px;box-shadow:0 40px 70px -30px rgba(20,20,40,.55)}
+.screen{background:#93AECB;border-radius:33px;overflow:hidden}
+.kk-head{background:#A6BDD6;padding:13px 15px;display:flex;align-items:center;gap:9px;color:#1b2b3a}
+.kk-back{font-size:19px;font-weight:700;color:#28394a}
+.ava{width:32px;height:32px;border-radius:11px;background:#12111c;color:#FEE500;font-weight:800;font-size:14px;flex:none;display:flex;align-items:center;justify-content:center}
+.kk-title{font-weight:700;font-size:14.5px}
+.kk-sub{font-size:10.5px;color:#3f566d;margin-top:1px}
+.kk-msgs{padding:15px 12px 18px;display:flex;flex-direction:column;gap:10px;min-height:300px}
+.sender{display:flex;gap:8px;align-items:flex-start;max-width:88%}
+.nm{font-size:11px;color:#2f4459;margin:0 0 4px 3px;font-weight:600}
+.msg{padding:9px 12px;border-radius:14px;font-size:13px;line-height:1.5;color:#191919}
+.recv{background:#fff;border-top-left-radius:5px}
+.sentrow{display:flex;justify-content:flex-end;align-items:flex-end;gap:6px}
+.sent{background:#FEE500;border-top-right-radius:5px;max-width:80%}
+.tstamp{font-size:10px;color:#3f566d;margin-bottom:2px}
+.vmsg{display:flex;align-items:center;gap:9px}
+.playb{width:24px;height:24px;border-radius:50%;background:#12111c;color:#FEE500;display:flex;align-items:center;justify-content:center;flex:none;font-size:10px}
+.wf{display:flex;align-items:center;gap:2.5px;height:20px}
+.wf span{width:3px;border-radius:2px;background:#6b6000}
+.w1{height:6px}.w2{height:12px}.w3{height:18px}.w4{height:10px}
+.vdur{font-size:10.5px;color:#3a3a2a;font-weight:600}
+.voiceq{font-size:12px;color:#5a5230;background:#fff6b0;border-top-right-radius:5px}
+.steps-in{margin-top:6px;display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:#333}
+.srcline{margin-top:7px;padding-top:7px;border-top:1px solid #eee;font-size:11px;color:#7a7a7a}
+.listen{display:inline-flex;align-items:center;gap:6px;margin-top:8px;background:#12111c;color:#FEE500;font-size:11.5px;font-weight:700;padding:6px 11px;border-radius:9px}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:14px;margin-top:28px}
+.feat{background:#F7F8FC;border:1px solid rgba(30,40,80,.08);border-radius:14px;padding:20px}
+.feat .fk{display:flex;align-items:center;gap:9px}
+.feat .fico{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(61,102,230,.1);color:#3D66E6;flex:none}
+.feat .fico svg{width:19px;height:19px}
+.feat .kk{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#8b88a0}
+.feat h4{margin:12px 0 6px;font-size:16px;font-weight:700;color:#161327}
+.feat p{margin:0;color:#6b6783;font-size:13.5px;line-height:1.55}
+.ctawrap{text-align:center;padding-top:12px}
+.form{margin-top:30px;background:#fff;border:1px solid rgba(30,40,80,.1);border-radius:20px;padding:30px;text-align:left;box-shadow:0 34px 74px -40px rgba(40,50,110,.6)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.lbl{font-size:12.5px;color:#41455e;font-weight:600}
+.lbl .req{color:#3D66E6;margin-left:3px}
+.inp{background:#F7F8FC;border:1px solid rgba(30,40,80,.14);border-radius:11px;color:#191627;font-family:inherit;font-size:14.5px;padding:12px 14px;outline:none;transition:border-color .15s,box-shadow .15s}
+.inp:focus{border-color:#3D66E6;box-shadow:0 0 0 3px rgba(61,102,230,.16);background:#fff}
+.inp::placeholder{color:#a2a0b3}
+textarea.inp{resize:vertical;min-height:110px;line-height:1.55}
+.btn{margin-top:20px;width:100%;border:0;border-radius:13px;padding:16px;font-family:inherit;font-size:15.5px;font-weight:700;color:#fff;background:#3D66E6;cursor:pointer;transition:transform .12s,box-shadow .2s,background .2s;box-shadow:0 16px 34px -14px rgba(61,102,230,.7)}
+.btn:hover{transform:translateY(-1px);background:#2f52c9;box-shadow:0 22px 44px -14px rgba(61,102,230,.75)}
+.err{color:#d64550;font-size:13px;margin-top:12px;min-height:1px}
+.ok{margin-top:14px;background:rgba(61,102,230,.09);border:1px solid rgba(61,102,230,.28);color:#2f4bb0;border-radius:11px;padding:13px 15px;font-size:13.5px}
+.foot{border-top:1px solid rgba(30,40,80,.1);margin-top:24px;padding:32px 0 48px;color:#8b88a0;font-size:12.5px;line-height:1.75}
+.foot .fbrand{display:flex;align-items:center;gap:9px;margin-bottom:12px}
+.foot .fbrand img{height:20px}
+.foot .fbrand b{font-size:15px;color:#41455e;font-weight:800;letter-spacing:-.02em}
+.foot .warn{color:#5c5876;font-weight:500}
+.foot .addr{color:#a2a0b3}
+@media(max-width:720px){
+.sec{width:100%!important;height:auto!important}
+.h1{width:auto!important;height:auto!important;max-width:100%!important;text-align:left!important}
+.lead{width:auto!important;height:auto!important;max-width:100%!important}
+.svc{width:auto!important;height:auto!important}
+.steps-v{width:100%}
+.stepc{width:100%!important;height:auto!important}
+.feat{width:auto!important;height:auto!important}
+.badge{height:auto!important}
+}
+@media(max-width:560px){.h1{font-size:30px!important}.big{font-size:24px!important}.fgrid{grid-template-columns:1fr}.sec{padding:46px 0}.aiband{padding:30px 20px}.badge{font-size:14px!important;width:auto!important}.ctawrap .lead{text-align:center}}
+</style>
+</helmet>
+<div class="stage" ref="{{ setRoot }}">
+<div class="gridbg"></div>
+<div class="col">
+
+<div class="brand">
+<div class="blogo"><img src="logo.png" alt="eiNpictures"><span class="bword">eiN<span class="i">pictures</span></span></div>
+<div class="mono tag">XR · DIGITAL TWIN · AI</div>
+</div>
+
+
+
+<section class="sec" style="padding-top: 52px; width: 682px; height: 854px">
+<div class="badge" style="width: 193px; height: 43px; font-size: 20px"><i></i>3D 시각화 솔루션</div>
+<h1 class="h1" style="text-align: justify; width: 716px; font-size: 48px">현실을 디지털로 옮기고,<br><span class="grad">경험으로 연결합니다.</span></h1>
+<p class="lead" style="width: 676px; height: 64px; max-width: 76.35ch; border-width: 1px; border-style: solid; border-color: #00000000">디지털트윈 시각화부터 지능형 인터랙티브 매뉴얼, 몰입형 훈련·실습 솔루션까지. XR 기술로 산업 현장의 디지털 전환을 설계합니다.</p>
+<div class="slot" style="aspect-ratio:16/9">
+<img class="heroimg" src="hero.webp" alt="디지털트윈 시각화">
+</div>
+<div class="chips"><span class="chip">프로젝트</span><span class="chip">보고</span><span class="chip">시뮬레이션</span><span class="chip">매뉴얼</span><span class="chip">R&amp;D</span></div>
+<p class="lead" style="margin-top: 16px; max-width: 69.23ch">모든 것을 시각화하여 프로젝트·보고·시뮬레이션·매뉴얼·R&amp;D 등 현장의 작업에 실질적인 도움을 드립니다.</p>
+</section><section class="sec" style="padding-top: 0; width: 669px; height: 357px">
+<div class="eb">Core Services</div>
+<div style="height:16px"></div>
+<div class="svc"><div class="sico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 21 7v10l-9 5-9-5V7z"></path><path d="M3 7l9 5 9-5"></path><path d="M12 12v10"></path></svg></div><div><h3>디지털트윈 실시간 시각화</h3><p>실제 설비와 공간을 1:1 디지털 트윈으로 구현하고, 실시간 데이터와 연동해 모니터링·시뮬레이션을 지원합니다.</p></div></div>
+<div class="svc"><div class="sico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2.5"></rect><path d="M8 8h8M8 12h6"></path><path d="M13.5 16.5l2 2 3.5-3.5"></path></svg></div><div><h3>지능형 인터랙티브 3D 매뉴얼</h3><p>복잡한 작업·유지보수 절차를 3D 인터랙티브 매뉴얼로 제작해, 작업자가 단계별로 직관적으로 따라할 수 있습니다.</p></div></div>
+<div class="svc" style="border-bottom: 0; width: 671px; height: 91px"><div class="sico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="3.5"></rect><path d="M8 17c.6 1.6 1.9 2.2 4 2.2s3.4-.6 4-2.2"></path><path d="M2 11.5h2.2M19.8 11.5H22"></path></svg></div><div><h3>XR 훈련 매뉴얼 및 시뮬레이션</h3><p>위험하거나 비용이 큰 작업도 몰입형 XR 환경에서 반복 훈련하여, 안전하게 숙련도를 높일 수 있습니다.</p></div></div>
+</section>
+
+<section class="sec" style="padding-top: 32px; width: 677px; height: 1222px">
+<div class="badge" style="width: 193px; height: 43px; font-size: 20px"><i></i>AI 매뉴얼 솔루션</div>
+<div class="big" style="font-size: 48px">말로 하시면, <em>다 됩니다.</em></div>
+<p class="lead" style="margin-top:14px;max-width:none">산업 현장 베테랑 기술 장인의 노하우를 데이터로 쌓고 RAG로 학습시켜, 카카오톡 챗봇으로 전수합니다. 현장에서 말로 묻고, 말과 글로 답을 받으세요.</p>
+<div class="aiflow">
+<div class="phone"><div class="screen">
+<div class="kk-head"><span class="kk-back">‹</span><div class="ava">장</div><div><div class="kk-title">장인봇</div><div class="kk-sub">기술 전수 도우미 · 응답 중</div></div></div>
+<div class="kk-msgs">
+<div class="sentrow"><span class="tstamp">2:14</span><div class="sent msg"><div class="vmsg"><div class="playb">▶</div><div class="wf"><span class="w1"></span><span class="w3"></span><span class="w2"></span><span class="w4"></span><span class="w3"></span><span class="w1"></span><span class="w2"></span><span class="w4"></span><span class="w3"></span><span class="w1"></span></div><div class="vdur">0:07</div></div></div></div>
+<div class="sentrow"><div class="sent msg voiceq">🎤 “3호기에서 드르륵 소리가 나요”</div></div>
+<div class="sender"><div class="ava">장</div><div><div class="nm">장인봇</div><div class="recv msg">“드르륵” 소리면 <b>베어링 유격</b>일 가능성이 높아요. 김영수 반장님 노하우로 확인해볼게요 👇<div class="steps-in"><span>1. 전원 차단 후 안전 커버 개방</span><span>2. 베어링 유격을 손으로 확인</span><span>3. 그리스 도포 상태 점검</span></div><div class="srcline">📎 출처 · 김영수 반장 정비노트 · 회전설비 편</div><span class="listen">🔊 음성으로 듣기</span></div></div></div>
+</div>
+</div></div>
+<div class="steps-v">
+<div class="stepc" style="width: 372px; height: 138px"><span class="sn">STEP 1</span><h4>데이터화</h4><p>베테랑의 작업·정비 노하우를 인터뷰·매뉴얼·현장 영상으로 수집해 구조화된 데이터로 축적합니다.</p></div>
+<div class="sarrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v13"></path><path d="M6 13l6 6 6-6"></path></svg></div>
+<div class="stepc" style="width: 374px; height: 132px"><span class="sn">STEP 2</span><h4>RAG 학습</h4><p>축적한 지식을 검색증강생성(RAG)으로 학습시켜, 현장 질문에 근거와 함께 정확히 답하는 지식 엔진을 만듭니다.</p></div>
+<div class="sarrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v13"></path><path d="M6 13l6 6 6-6"></path></svg></div>
+<div class="stepc" style="width: 372px; height: 134px"><span class="sn">STEP 3</span><h4>카카오톡 챗봇</h4><p>별도 앱 설치 없이 우리에게 친근한 카카오톡에서 음성·텍스트로 질문하고, 근거와 함께 즉시 답을 받습니다.</p></div>
+</div>
+</div>
+<div class="feats">
+<div class="feat"><div class="fk"><div class="fico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></div><span class="kk">01 VOICE ASK</span></div><h4>음성으로 질문</h4><p>손이 바쁜 현장에서 버튼 하나로 말로 물어보세요. 현장 소음도 도메인 특화 처리로 인식합니다.</p></div>
+<div class="feat"><div class="fk"><div class="fico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"></path></svg></div><span class="kk">02 VOICE ANSWER</span></div><h4>음성으로 답변</h4><p>화면을 볼 수 없는 작업 중에도 답변을 들으면서 그대로 따라 할 수 있습니다.</p></div>
+<div class="feat"><div class="fk"><div class="fico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></div><span class="kk">03 SOURCED</span></div><h4>근거와 함께</h4><p>어떤 장인의 어떤 노하우에서 나온 답인지 출처를 함께 제시합니다. 믿고 따를 수 있습니다.</p></div>
+<div class="feat"><div class="fk"><div class="fico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M10 8.5v7l6-3.5-6-3.5z"></path></svg></div><span class="kk">04 SHORT-FORM</span></div><h4>숏폼으로 배웁니다</h4><p>고장 수리·정밀 세팅 시 스마트폰으로 1~2분 영상을 찍어 올리면, 그대로 지식이 되어 다음 사람은 숏폼으로 배웁니다.</p></div>
+</div>
+</section>
+
+<section class="sec ctawrap" style="padding-top: 4px; width: 680px; height: 713px">
+<div class="badge" style="margin-bottom:16px"><i></i>지금 바로 연락하세요</div>
+<h1 class="h1" style="margin-top:0">견적 및 상담 신청을 하시면<br><span class="grad">바로 연락드리겠습니다.</span></h1>
+<p class="lead dim" style="margin:16px auto 0">아래 내용을 남겨 주시면 담당자가 신속하게 회신드립니다.</p>
+
+<div class="form">
+<div class="fgrid">
+<div class="field"><label class="lbl">기관(회사)명<span class="req">*</span></label><input class="inp" placeholder="예) 아이엔픽처스" value="{{ org }}" onChange="{{ onOrg }}"></div>
+<div class="field"><label class="lbl">담당자 성명<span class="req">*</span></label><input class="inp" placeholder="예) 홍길동" value="{{ name }}" onChange="{{ onName }}"></div>
+<div class="field full"><label class="lbl">이메일<span class="req">*</span></label><input class="inp" type="email" placeholder="reply@example.com" value="{{ email }}" onChange="{{ onEmail }}"></div>
+<div class="field full"><label class="lbl">상담 내용<span class="req">*</span></label><textarea class="inp" placeholder="문의하실 내용, 도입 목적, 현장 규모 등을 자유롭게 적어 주세요." value="{{ message }}" onChange="{{ onMsg }}"></textarea></div>
+</div>
+<button class="btn" onClick="{{ submit }}">상담 내용 적고 견적 받기</button>
+<div class="err">{{ error }}</div>
+<sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}"><div class="ok">메일 앱이 열립니다. 작성된 메일을 그대로 전송해 주시면 바로 연락드리겠습니다.</div></sc-if>
+</div>
+</section>
+
+<div class="foot">
+<div class="rule"></div>
+<div class="fbrand" style="margin-top: 22px; width: 686px; height: 33px"><img src="logo.png" alt="eiNpictures"><b>eiNpictures</b></div>
+
+<div class="warn" style="width: 681px; height: 11px; font-style: normal">XR 기술 기반 디지털트윈 시각화 · 지능형 인터랙티브 매뉴얼 · 훈련·실습 솔루션 전문기업</div><div style="margin-top:10px">본 메일은 발신 전용입니다.</div>
+<div class="addr" style="margin-top: 6px; height: 12px">인천광역시 연수구 송도미래로 30 스마트밸리 E-901,902 &nbsp;·&nbsp; T. 032-244-0808 &nbsp;/&nbsp; F. 032-244-0811</div>
+<div style="margin-top: 6px; height: 12px">Copyright © eiNpictures. All rights reserved.</div>
+<div style="margin-top:10px"><a href="https://www.einpictures.co.kr" target="_blank">www.einpictures.co.kr</a></div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:720,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { org:'', name:'', email:'', message:'', error:'', sent:false };
+  set(k){ return (e)=> this.setState({ [k]: e.target.value, error:'' }); }
+  submit = () => {
+    const { org, name, email, message } = this.state;
+    if(!org.trim() || !name.trim() || !email.trim() || !message.trim()){
+      this.setState({ error:'모든 항목을 입력해 주세요.', sent:false }); return;
+    }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())){
+      this.setState({ error:'올바른 이메일 주소를 입력해 주세요.', sent:false }); return;
+    }
+    const subject = `[견적/상담 신청] ${org.trim()} - ${name.trim()}`;
+    const body = [
+      `기관(회사)명: ${org.trim()}`,
+      `담당자 성명: ${name.trim()}`,
+      `이메일: ${email.trim()}`,
+      '',
+      '상담 내용:',
+      message.trim()
+    ].join('\n');
+    const url = `mailto:eineye70@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = url;
+    this.setState({ error:'', sent:true });
+  };
+  applyAccent(){ if(this.root && this.props.accent){ this.root.style.setProperty('--accent', this.props.accent); } }
+  componentDidMount(){ this.applyAccent(); }
+  componentDidUpdate(){ this.applyAccent(); }
+  renderVals(){
+    return {
+      setRoot:(el)=>{ this.root = el; },
+      org:this.state.org, name:this.state.name, email:this.state.email, message:this.state.message,
+      error:this.state.error, sent:this.state.sent,
+      onOrg:this.set('org'), onName:this.set('name'), onEmail:this.set('email'), onMsg:this.set('message'),
+      submit:this.submit
+    };
+  }
+}
+</script>
+</body>
+</html>
